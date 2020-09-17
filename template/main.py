@@ -18,20 +18,3 @@ def invr():
 ################################################################
 ############ ---- THE ACTUAL CODE STARTS BELOW ---- ############
 
-k,a,b=invr()
-
-if k<a-1:
-	print(1+k)
-	exit(0)
-
-now=a
-k-=(a-1)
-
-if b-a>=3:
-	now=a+(k//2)*(b-a)+k%2
-else:
-	now=a+k
-
-print(now)
-	
-		
