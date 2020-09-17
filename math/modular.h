@@ -51,8 +51,7 @@ struct Modular
 	friend Modular operator / (ll b,const Modular &a) { Modular c(b); return c/=a; }
 	
 	friend istream& operator >> (istream& in,Modular &a) {ll x; in>>x; a.normalize(x); return in; }
- 
-    friend ostream& operator << (ostream& out,const Modular& a) { return out<<a.val; }
+	friend ostream& operator << (ostream& out,const Modular& a) { return out<<a.val; }
 };
 
 //const ll mod=998244353;
