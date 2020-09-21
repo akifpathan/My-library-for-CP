@@ -22,17 +22,17 @@ struct Modular
 	Modular(){ }
 	Modular(ll _val) { val=_val; }
 	
-	Modular normalize(const ll x) {val=x%mod; if(val<0) val+=mod; return val; }
+	Modular normalize(const ll x) { val=x%mod; if(val<0) val+=mod; return val; }
 	
 	bool operator == (const Modular &a) { return val==a.val; }
 	bool operator != (const Modular &a) { return val!=a.val; }
 	
 	Modular operator = (ll x) { return normalize(x); }
 	Modular operator = (const Modular &x){val=x.val;return *this;}
-	Modular operator += (const Modular &a) {return normalize(val+a.val); }
-	Modular operator -= (const Modular &a) {return normalize(val-a.val);  }
-	Modular operator *= (const Modular &a) {return normalize(val*a.val);}
-	Modular operator /= (const Modular &b) {return normalize(val*inverse(b).val); }
+	Modular operator += (const Modular &a) { return normalize(val+a.val); }
+	Modular operator -= (const Modular &a) { return normalize(val-a.val);  }
+	Modular operator *= (const Modular &a) { return normalize(val*a.val);}
+	Modular operator /= (const Modular &b) { return normalize(val*inverse(b).val); }
 	
 	//friend Modular power(Modular b,ll n) {Modular ans=1; for(;n>0;n/=2,b*=b) if(n&1) ans*=b;return ans; }
 	friend Modular operator ^ (Modular b,ll n) { return power(b,n); }
