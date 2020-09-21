@@ -22,7 +22,10 @@ struct Modular
 	Modular(){ }
 	Modular(ll _val) { val=_val; }
 	
-	Modular normalize(const ll x) {val=x%mod; val+=mod; val%=mod; return val; }
+	Modular normalize(const ll x) {val=x%mod; if(val<0) val+=mod; return val; }
+	
+	bool operator == (const Modular &a) { return val==a.val; }
+	bool operator != (const Modular &a) { return val!=a.val; }
 	
 	Modular operator = (ll x) { return normalize(x); }
 	Modular operator = (const Modular &x){val=x.val;return *this;}
@@ -56,7 +59,7 @@ struct Modular
 
 //const ll mod=998244353;
 const ll mod=1e9+7;
-using Mint = Modular<mod> ;
+typedef Modular<mod> Mint;
 
 vector<Mint>fact(1,1);
 vector<Mint>inv_fact(1,1);
