@@ -28,7 +28,7 @@ struct Modular
 	bool operator != (const Modular &a) { return val!=a.val; }
 	
 	Modular operator = (ll x) { return normalize(x); }
-	Modular operator = (const Modular &x){val=x.val;return *this;}
+	Modular operator = (const Modular &x){ val=x.val;return *this;}
 	Modular operator += (const Modular &a) { return normalize(val+a.val); }
 	Modular operator -= (const Modular &a) { return normalize(val-a.val);  }
 	Modular operator *= (const Modular &a) { return normalize(val*a.val);}
