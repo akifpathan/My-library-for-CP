@@ -53,7 +53,10 @@ struct seg_tree
 	
 	int query(int tL,int tR,int rL,int rR,int at)
 	{
-		if(tL>rR || tR<rL) return 0;
+		if(tL>rR || tR<rL) return ;
+		//for sum return 0
+		//for min return +inf
+		//for max return -inf
 		if(tL>=rL && tR<=rR) return Tree[at];
 		
 		int mid=(tL+tR)/2;
@@ -65,3 +68,4 @@ struct seg_tree
 	}
 	
 };
+	
