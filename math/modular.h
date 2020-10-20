@@ -1,3 +1,4 @@
+
 template<typename T,typename U>
 T power(T b,U n)
 {
@@ -24,8 +25,9 @@ struct Modular
 	
 	Modular normalize(const ll x) { val=x%mod; if(val<0) val+=mod; return val; }
 	
-	bool operator == (const Modular &a) { return val==a.val; }
-	bool operator != (const Modular &a) { return val!=a.val; }
+	bool operator == (const Modular &a) const { return val==a.val; }
+	bool operator != (const Modular &a) const { return val!=a.val; }
+	bool operator < (const Modular &a) const { return val<a.val; }
 	
 	Modular operator = (ll x) { return normalize(x); }
 	Modular operator = (const Modular &x){ val=x.val;return *this;}
@@ -64,12 +66,24 @@ typedef Modular<mod> Mint;
 vector<Mint>fact(1,1);
 vector<Mint>inv_fact(1,1);
 
+Mint factorial(int n)
+{
+	if(n<0) return 0;
+	while((int)fact.size()<n+1)
+	{
+		Mint x=fact.back()*(int)fact.size();
+		fact.push_back(x);
+		inv_fact.push_back(1/x);
+	}
+	return fact[n];
+}
+
 Mint C(int n,int k)
 {
 	if(k<0 || k>n) return 0;
 	while((int)fact.size()<n+1)
 	{
-		Mint x=fact.back()*fact.size();
+		Mint x=fact.back()*(int)fact.size();
 		fact.push_back(x);
 		inv_fact.push_back(1/x);
 	}
