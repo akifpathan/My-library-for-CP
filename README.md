@@ -1,8 +1,10 @@
-# Templates:
+### Templates:
+#### C++
 In c++, I use precomplied header for speeding up the compilation time. It is **6x** faster. <br>
-
 [c++ template](https://github.com/akifpathan/My-library-for-CP/blob/master/template/main.cpp) <br>
-[c++ debugging](https://github.com/akifpathan/My-library-for-CP/blob/master/template/debug.h) <br>
+#### Python3
+I often use **python3** <br>
+[python3 template](https://github.com/akifpathan/My-library-for-CP/blob/master/template/main.py)
 
 ### Data Structures:
 1. [Binary Indexed Tree / Fenwick Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/BIT.h)
