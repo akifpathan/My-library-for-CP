@@ -1,3 +1,4 @@
+
 template<int N,ll mod>
 struct Matrix
 {
@@ -36,6 +37,7 @@ struct Matrix
 		rep(i,N) { rep(j,N) out<<a.ara[i][j]<<" "; out<<"\n";}
 		return out;
 	}
+	#undef rep
 };
 
 const ll mod=1e9+7;
