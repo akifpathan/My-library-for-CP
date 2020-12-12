@@ -1,4 +1,11 @@
 
+/*
+ * O(n) pattern matching algorithm
+ * pi[i] denotes the maximum length of suffix
+ * ended at position(i) which is also a prefix
+ * of the string 
+ * call with KMP kmp(x) where x is the desired string
+*/
 
 struct KMP
 {
