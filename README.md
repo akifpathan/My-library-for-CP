@@ -15,8 +15,12 @@ I often use **python3** <br>
 
 ### Math:
 1. [Modular Arithmatic](https://github.com/akifpathan/My-library-for-CP/blob/master/math/modular.h)
-2. [Matrix](https://github.com/akifpathan/My-library-for-CP/blob/master/math/modular.h)
+2. [Matrix](https://github.com/akifpathan/My-library-for-CP/blob/master/math/matrix.h)
 3. For BigInt, I use **python3**
 
 ### Algorithms:
 1. [MO's Algo](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/MO.h)
+
+### String:
+1. [Suffix Array](https://github.com/akifpathan/My-library-for-CP/blob/master/string/suffix_array.h)
+2. [KMP](https://github.com/akifpathan/My-library-for-CP/blob/master/string/KMP.h)
