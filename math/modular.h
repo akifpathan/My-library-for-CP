@@ -1,4 +1,3 @@
-
 template<typename T,typename U>
 T power(T b,U n)
 {
@@ -20,8 +19,8 @@ struct Modular
 {
 	ll val;
 	
-	Modular(){ }
-	Modular(ll _val) { val=_val; }
+	Modular(){ val=0; }
+	Modular(ll _val) { val=_val%mod; if(val<0) val+=mod; }
 	
 	Modular normalize(const ll x) { val=x%mod; if(val<0) val+=mod; return val; }
 	
@@ -88,4 +87,16 @@ Mint C(int n,int k)
 		inv_fact.push_back(1/x);
 	}
 	return fact[n]*inv_fact[k]*inv_fact[n-k];
+}
+
+Mint P(int n,int k)
+{
+	if(k<0 || k>n) return 0;
+	while((int)fact.size()<n+1)
+	{
+		Mint x=fact.back()*(int)fact.size();
+		fact.push_back(x);
+		inv_fact.push_back(1/x);
+	}
+	return fact[n]*inv_fact[n-k];
 }
