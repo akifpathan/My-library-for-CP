@@ -1,4 +1,7 @@
 
+const int mx=
+const int sz=
+
 struct query
 {
     int l,r,id;
@@ -51,8 +54,12 @@ void solve()
 	
 	
 	
+	int l=0;
+	int r=-1;
 	
-	for(int i=1;i<=n;i++)
+	//sort(ques+1,ques+q+1);
+	
+	for(int i=1;i<=q;i++)
 	{
 		while(l>ques[i].l) add(--l);
 		while(l<ques[i].l) baad(l++);
@@ -62,6 +69,6 @@ void solve()
 		ans[ques[i].id]=sum[now];
 	}
 
-	for(int i=1;i<=n;i++) cout<<ans[i]<<" ";
+	for(int i=1;i<=q;i++) cout<<ans[i]<<" ";
 	
 }
