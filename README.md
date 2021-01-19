@@ -12,6 +12,7 @@ I often use **python3** <br>
 3. [Least Common Ancestor](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/LCA.h)
 4. [Normal Segment Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/segmentTree.h)
 5. [Sparse Table](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/sparse_table.h)
+5. [Merge Sort Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/merge_sort_tree.h)
 
 ### Math:
 1. [Modular Arithmatic](https://github.com/akifpathan/My-library-for-CP/blob/master/math/modular.h)
