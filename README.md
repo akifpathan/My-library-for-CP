@@ -13,6 +13,7 @@ I often use **python3** <br>
 4. [Normal Segment Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/segmentTree.h)
 5. [Sparse Table](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/sparse_table.h)
 5. [Merge Sort Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/merge_sort_tree.h)
+6. [Wavelet Tree](https://github.com/akifpathan/My-library-for-CP/blob/master/data%20structure/wavelet_tree.h)
 
 ### Math:
 1. [Modular Arithmatic](https://github.com/akifpathan/My-library-for-CP/blob/master/math/modular.h)
