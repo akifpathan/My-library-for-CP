@@ -12,9 +12,9 @@ struct seg_tree
 	
 	auto func(auto a,auto b)
 	{
-		//for sum: return a+b
-		//for min: return min(a,b)
-		//for max: return max(a,b)
+		//for sum: return a+b;
+		//for min: return min(a,b);
+		//for max: return max(a,b);
 		
 	}
 	
@@ -39,6 +39,7 @@ struct seg_tree
 	{
 		if(l==r)
 		{
+			ara[l]=val;
 			Tree[at]=val;
 			return;
 		}
